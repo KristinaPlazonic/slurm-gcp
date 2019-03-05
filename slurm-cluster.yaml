@@ -25,10 +25,10 @@ resources:
   properties:
     cluster_name            : google1
     static_node_count       : 2
-    max_node_count          : 10
+    max_node_count          : 2
 
-    zone                    : us-central1-b
-    region                  : us-central1
+    zone                    : us-east1-b
+    region                  : us-east1
     cidr                    : 10.10.0.0/16
 
     # Optional network configuration fields
@@ -40,7 +40,7 @@ resources:
     controller_machine_type : n1-standard-2
     compute_machine_type    : n1-standard-2
     login_machine_type      : n1-standard-2
-    #login_node_count        : 1
+    login_node_count        : 1
 
     # Optional compute configuration fields
     #cpu_platform               : Intel Skylake
@@ -64,6 +64,6 @@ resources:
     #gpu_type                   : nvidia-tesla-v100
     #gpu_count                  : 8
 
-    #slurm_version           : < Current slurm version, e.g. 17.11.8 >
-    default_users           : < GCP user email addr, comma separated >
+    slurm_version           : 17.11.7
+    default_users           : lisa.plazonic@gmail.com
 #  [END cluster_yaml]
